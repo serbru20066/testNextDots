@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapVC.h
 //  Test_ios_nextDots
 //
 //  Created by LTSSetup on 2/7/17.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    
-    NSMutableArray *arrPlaces;
-}
+@interface MapVC : UIViewController
 
 @end
-

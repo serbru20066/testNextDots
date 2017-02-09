@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		338C78661E4BCB0100EF77DD /* PlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 338C78651E4BCB0100EF77DD /* PlaceTVC.m */; };
 		33C870291E4A6A4E00304DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C870281E4A6A4E00304DE2 /* main.m */; };
 		33C8702C1E4A6A4E00304DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8702B1E4A6A4E00304DE2 /* AppDelegate.m */; };
 		33C8702F1E4A6A4E00304DE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8702E1E4A6A4E00304DE2 /* ViewController.m */; };
 		33C870321E4A6A4E00304DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C870301E4A6A4E00304DE2 /* Main.storyboard */; };
 		33C870341E4A6A4E00304DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C870331E4A6A4E00304DE2 /* Assets.xcassets */; };
 		33C870371E4A6A4E00304DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C870351E4A6A4E00304DE2 /* LaunchScreen.storyboard */; };
+		33C870401E4A6D1000304DE2 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8703F1E4A6D1000304DE2 /* HomeVC.m */; };
+		33C870431E4A6D1C00304DE2 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C870421E4A6D1C00304DE2 /* MapVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		338C78641E4BCB0100EF77DD /* PlaceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTVC.h; sourceTree = "<group>"; };
+		338C78651E4BCB0100EF77DD /* PlaceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTVC.m; sourceTree = "<group>"; };
 		33C870241E4A6A4E00304DE2 /* Test_ios_nextDots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_ios_nextDots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C870281E4A6A4E00304DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33C8702A1E4A6A4E00304DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,10 @@
 		33C870331E4A6A4E00304DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33C870361E4A6A4E00304DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33C870381E4A6A4E00304DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33C8703E1E4A6D1000304DE2 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		33C8703F1E4A6D1000304DE2 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		33C870411E4A6D1C00304DE2 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		33C870421E4A6D1C00304DE2 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		338C78631E4BCAE700EF77DD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				338C78641E4BCB0100EF77DD /* PlaceTVC.h */,
+				338C78651E4BCB0100EF77DD /* PlaceTVC.m */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
 		33C8701B1E4A6A4E00304DE2 = {
 			isa = PBXGroup;
 			children = (
+				338C78631E4BCAE700EF77DD /* CustomViews */,
 				33C870261E4A6A4E00304DE2 /* Test_ios_nextDots */,
 				33C870251E4A6A4E00304DE2 /* Products */,
 			);
@@ -67,6 +86,10 @@
 				33C870351E4A6A4E00304DE2 /* LaunchScreen.storyboard */,
 				33C870381E4A6A4E00304DE2 /* Info.plist */,
 				33C870271E4A6A4E00304DE2 /* Supporting Files */,
+				33C8703E1E4A6D1000304DE2 /* HomeVC.h */,
+				33C8703F1E4A6D1000304DE2 /* HomeVC.m */,
+				33C870411E4A6D1C00304DE2 /* MapVC.h */,
+				33C870421E4A6D1C00304DE2 /* MapVC.m */,
 			);
 			path = Test_ios_nextDots;
 			sourceTree = "<group>";
@@ -152,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				33C8702F1E4A6A4E00304DE2 /* ViewController.m in Sources */,
+				33C870401E4A6D1000304DE2 /* HomeVC.m in Sources */,
 				33C8702C1E4A6A4E00304DE2 /* AppDelegate.m in Sources */,
 				33C870291E4A6A4E00304DE2 /* main.m in Sources */,
+				33C870431E4A6D1C00304DE2 /* MapVC.m in Sources */,
+				338C78661E4BCB0100EF77DD /* PlaceTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +304,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BrunoCardenasTorres.Test-ios-nextDots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,6 +317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BrunoCardenasTorres.Test-ios-nextDots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -312,6 +340,7 @@
 				33C8703D1E4A6A4E00304DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

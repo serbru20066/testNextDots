@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeVC.h
 //  Test_ios_nextDots
 //
 //  Created by LTSSetup on 2/7/17.
@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HomeVC : UIViewController
 {
     
-    NSMutableArray *arrPlaces;
+    NSArray *arrPlaces;
+
 }
 
 @end
-

@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSArray *arrPlacesInitial = @[@{@"id":@"0",@"nombre":@"SuiteSheraton",@"Precio":@"USD100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO"},@{@"id":@"1",@"nombre":@"Punta Cana",@"Precio":@"USD 150.0",@"Tipo":@"Normal",@"favorite":@"NO"},@{@"id":@"2",@"nombre":@"Casa matusita",@"Precio":@"USD 1000.0",@"Tipo":@"Casual",@"favorite":@"NO"},@{@"id":@"3",@"nombre":@"Place test",@"Precio":@"USD 100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO"},@{@"id":@"4",@"nombre":@"Place test 2",@"Precio":@"USD 100.0",@"Tipo":@"Normal",@"favorite":@"NO"},@{@"id":@"5",@"nombre":@"Place test",@"Precio":@"USD 100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO"},@{@"id":@"6",@"nombre":@"Place test 3",@"Precio":@"USD 100.0",@"Tipo":@"Normal",@"favorite":@"NO"}];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:arrPlacesInitial forKey:@"arrPlaces"];
+    
     return YES;
 }
 
