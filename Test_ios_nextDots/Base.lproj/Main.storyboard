@@ -77,7 +77,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="174"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5kl-ix-B2t" id="euw-qm-EDa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="173.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="gbs-lk-uQs">
@@ -353,7 +353,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6m-cd-yIf">
-                                        <rect key="frame" x="170.5" y="29" width="34" height="21"/>
+                                        <rect key="frame" x="171" y="29" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -366,21 +366,31 @@
                                     <constraint firstItem="n6m-cd-yIf" firstAttribute="centerY" secondItem="vZ7-BR-bhN" secondAttribute="centerY" constant="5" id="sr8-fa-h1a"/>
                                 </constraints>
                             </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-AS-31Q">
+                                <rect key="frame" x="0.0" y="69" width="375" height="549"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Sug-AS-31Q" firstAttribute="top" secondItem="vZ7-BR-bhN" secondAttribute="bottom" id="9cr-B1-GmH"/>
                             <constraint firstItem="vZ7-BR-bhN" firstAttribute="top" secondItem="pG0-WM-MfD" secondAttribute="top" id="CqJ-Er-Ynp"/>
                             <constraint firstItem="vZ7-BR-bhN" firstAttribute="leading" secondItem="pG0-WM-MfD" secondAttribute="leading" id="O0N-t5-ESL"/>
+                            <constraint firstItem="Sug-AS-31Q" firstAttribute="leading" secondItem="pG0-WM-MfD" secondAttribute="leading" id="SR9-0q-odV"/>
+                            <constraint firstAttribute="trailing" secondItem="Sug-AS-31Q" secondAttribute="trailing" id="X6G-jz-FCq"/>
+                            <constraint firstItem="op3-U7-7PG" firstAttribute="top" secondItem="Sug-AS-31Q" secondAttribute="bottom" id="dra-f0-Bk4"/>
                             <constraint firstAttribute="trailing" secondItem="vZ7-BR-bhN" secondAttribute="trailing" id="exk-AG-2Cm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="ic_add_location" id="BDL-gu-0af">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="mapKit" destination="Sug-AS-31Q" id="ELp-zK-M3W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKV-9Q-rbV" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="910"/>
+            <point key="canvasLocation" x="173.59999999999999" y="909.89505247376314"/>
         </scene>
     </scenes>
     <resources>

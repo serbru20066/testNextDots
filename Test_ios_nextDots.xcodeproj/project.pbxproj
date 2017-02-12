@@ -48,6 +48,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33395F1F1E50CCF800653AF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33C8702D1E4A6A4E00304DE2 /* ViewController.h */,
+				33C8702E1E4A6A4E00304DE2 /* ViewController.m */,
+				33C8703E1E4A6D1000304DE2 /* HomeVC.h */,
+				33C8703F1E4A6D1000304DE2 /* HomeVC.m */,
+				33C870411E4A6D1C00304DE2 /* MapVC.h */,
+				33C870421E4A6D1C00304DE2 /* MapVC.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		33395F201E50CD0B00653AF0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				33C8702A1E4A6A4E00304DE2 /* AppDelegate.h */,
+				33C8702B1E4A6A4E00304DE2 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		33395F211E50CD1600653AF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				338C78631E4BCAE700EF77DD /* CustomViews */,
+				33C870351E4A6A4E00304DE2 /* LaunchScreen.storyboard */,
+				33C870301E4A6A4E00304DE2 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		33395F221E50CD2A00653AF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33C870331E4A6A4E00304DE2 /* Assets.xcassets */,
+				33C870381E4A6A4E00304DE2 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		338C78631E4BCAE700EF77DD /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +96,12 @@
 				338C78651E4BCB0100EF77DD /* PlaceTVC.m */,
 			);
 			name = CustomViews;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		33C8701B1E4A6A4E00304DE2 = {
 			isa = PBXGroup;
 			children = (
-				338C78631E4BCAE700EF77DD /* CustomViews */,
 				33C870261E4A6A4E00304DE2 /* Test_ios_nextDots */,
 				33C870251E4A6A4E00304DE2 /* Products */,
 			);
@@ -77,19 +118,11 @@
 		33C870261E4A6A4E00304DE2 /* Test_ios_nextDots */ = {
 			isa = PBXGroup;
 			children = (
-				33C8702A1E4A6A4E00304DE2 /* AppDelegate.h */,
-				33C8702B1E4A6A4E00304DE2 /* AppDelegate.m */,
-				33C8702D1E4A6A4E00304DE2 /* ViewController.h */,
-				33C8702E1E4A6A4E00304DE2 /* ViewController.m */,
-				33C870301E4A6A4E00304DE2 /* Main.storyboard */,
-				33C870331E4A6A4E00304DE2 /* Assets.xcassets */,
-				33C870351E4A6A4E00304DE2 /* LaunchScreen.storyboard */,
-				33C870381E4A6A4E00304DE2 /* Info.plist */,
+				33395F221E50CD2A00653AF0 /* Resources */,
+				33395F211E50CD1600653AF0 /* Views */,
+				33395F201E50CD0B00653AF0 /* Delegate */,
+				33395F1F1E50CCF800653AF0 /* Controllers */,
 				33C870271E4A6A4E00304DE2 /* Supporting Files */,
-				33C8703E1E4A6D1000304DE2 /* HomeVC.h */,
-				33C8703F1E4A6D1000304DE2 /* HomeVC.m */,
-				33C870411E4A6D1C00304DE2 /* MapVC.h */,
-				33C870421E4A6D1C00304DE2 /* MapVC.m */,
 			);
 			path = Test_ios_nextDots;
 			sourceTree = "<group>";

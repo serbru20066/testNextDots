@@ -8,7 +8,10 @@
 
 #import "MapVC.h"
 
+
 @interface MapVC ()
+@property (weak, nonatomic) IBOutlet MKMapView *mapKit;
+
 
 @end
 
@@ -16,22 +19,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.mapKit.delegate = self;
+    
+   
+    CLLocationCoordinate2D startCoord = CLLocationCoordinate2DMake(-12.059561, -77.053471);
+    MKCoordinateRegion adjustedRegion = [_mapKit regionThatFits:MKCoordinateRegionMakeWithDistance(startCoord, 4500, 4500)];
+    [_mapKit setRegion:adjustedRegion animated:YES];
+    
+    
+    NSArray *arrPlacesAll = [[NSUserDefaults standardUserDefaults] objectForKey:@"arrPlaces"];
+
+    for (int i=0; i<[arrPlacesAll count]; i++) {
+        
+        MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+        double latitude = [[[arrPlacesAll objectAtIndex:i] objectForKey:@"latitude"] doubleValue];
+        double longitude = [[[arrPlacesAll objectAtIndex:i] objectForKey:@"longitude"] doubleValue];
+        
+        point.coordinate = CLLocationCoordinate2DMake(latitude, longitude);
+        point.title = [[arrPlacesAll objectAtIndex:i] objectForKey:@"nombre"] ;
+        [self.mapKit addAnnotation:point];
+
+    }
+
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -17,7 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSArray *arrPlacesInitial = @[@{@"id":@"0",@"nombre":@"SuiteSheraton",@"Precio":@"USD100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO"},@{@"id":@"1",@"nombre":@"Punta Cana",@"Precio":@"USD 150.0",@"Tipo":@"Normal",@"favorite":@"NO"},@{@"id":@"2",@"nombre":@"Casa matusita",@"Precio":@"USD 1000.0",@"Tipo":@"Casual",@"favorite":@"NO"},@{@"id":@"3",@"nombre":@"Place test",@"Precio":@"USD 100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO"},@{@"id":@"4",@"nombre":@"Place test 2",@"Precio":@"USD 100.0",@"Tipo":@"Normal",@"favorite":@"NO"},@{@"id":@"5",@"nombre":@"Place test",@"Precio":@"USD 100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO"},@{@"id":@"6",@"nombre":@"Place test 3",@"Precio":@"USD 100.0",@"Tipo":@"Normal",@"favorite":@"NO"}];
+    NSArray *arrPlacesInitial =
+  @[@{@"id":@"0",@"nombre":@"SuiteSheraton",@"Precio":@"USD100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO",@"latitude":@"-12.051078",@"longitude":@"-77.045156"},
+  @{@"id":@"1",@"nombre":@"Punta Cana",@"Precio":@"USD 150.0",@"Tipo":@"Normal",@"favorite":@"NO",@"latitude":@"-12.048455",@"longitude":@"-77.052130"},
+  @{@"id":@"2",@"nombre":@"Casa matusita",@"Precio":@"USD 1000.0",@"Tipo":@"Casual",@"favorite":@"NO",@"latitude":@"-12.055209",@"longitude":@"-77.052226"},
+  @{@"id":@"3",@"nombre":@"Place test",@"Precio":@"USD 100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO",@"latitude":@"-12.099511",@"longitude":@"-77.007122"},
+  @{@"id":@"4",@"nombre":@"Place test 2",@"Precio":@"USD 100.0",@"Tipo":@"Normal",@"favorite":@"NO",@"latitude":@"-12.077354",@"longitude":@"-77.074070"},
+  @{@"id":@"5",@"nombre":@"Place test",@"Precio":@"USD 100.0",@"Tipo":@"Matrimonial",@"favorite":@"NO",@"latitude":@"-12.078697",@"longitude":@"-77.060680"},
+  @{@"id":@"6",@"nombre":@"Place test 3",@"Precio":@"USD 100.0",@"Tipo":@"Normal",@"favorite":@"NO",@"latitude":@"-12.086083",@"longitude":@"-77.053127"}];
     
     [[NSUserDefaults standardUserDefaults] setObject:arrPlacesInitial forKey:@"arrPlaces"];
     
